@@ -2,6 +2,34 @@
 title: "Cambios"
 ---
 
+## v1.16.23
+
+### Nuevas Funciones
+
+- (`/search hsr`) Se añadió la categoría de Enemigos.
+- (`/challenge hsr`) Se añadió el modo Starward a las tarjetas de Memoria del caos, Pura ficción y Espejismo apocalíptico.
+- (`/challenge zzz`) Se añadió el modo Difícil a la tarjeta de Asalto mortífero.
+- (`/gacha-log import`) Se añadió la importación con un clic para cuentas de HoYoLAB de ZZZ, sin necesidad de URL.
+- (`/mimo`) Se añadió la vista del historial de puntos.
+- (`/accounts`) Ahora se muestra el estado y la hora de la última ejecución de cada tarea automática para la cuenta seleccionada.
+- (`/profile zzz`) Se añadieron los datos de la tarjeta de Sigrid.
+
+### Mejoras
+
+- (`/search`) Se dividió en los subcomandos `/search genshin` y `/search hsr`, reflejando el mismo comportamiento de `/profile`.
+- (`/gacha-log import`) Ahora solo se obtienen los registros nuevos en lugar del historial completo en cada importación.
+- (`/gacha-log view`) Ahora se mantienen actualizadas automáticamente las listas de objetos del banner permanente, para que las estadísticas de victorias del 50/50 sigan siendo precisas cuando los objetos limitados pasen al gachapón permanente.
+- (`/challenge hsr`) Ahora se muestra el equipo de Starward incluso cuando no se completó la fase correspondiente.
+- (`/challenge genshin stygian`) Se restauró la información de debilidades y resistencias de los enemigos.
+- (`/accompany`) Ahora se muestra el interruptor de compañía automática en la vista del personaje.
+- (`/notes`) Se eliminó la columna y el recordatorio de expediciones de HSR, ya que las expediciones ya no existen en el juego.
+- Se detuvo la entrega de notificaciones en cola de tareas automáticas por mensaje directo después de desactivar su ajuste, y ahora se muestra la hora de la acción en cada notificación.
+- Se combinan hasta 10 notificaciones de tareas automáticas en un solo mensaje directo y se descartan las exitosas que tengan más de 12 horas de antigüedad.
+
+### Corrección de errores
+
+- (`/gacha-log view`) Se corrigió un error por el cual los rangos S de ZZZ obtenidos durante su propio banner promocional se contaban como derrotas en el 50/50.
+
 ## v1.16.22
 
 ### Nuevas Funciones
