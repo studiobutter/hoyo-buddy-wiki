@@ -2,6 +2,34 @@
 title: "Changelogs"
 ---
 
+## v1.16.23
+
+### New Features
+
+- (`/search hsr`) Add Enemy category.
+- (`/challenge hsr`) Add Starward mode to Memory of Chaos, Pure Fiction, and Apocalyptic Shadow cards.
+- (`/challenge zzz`) Add Hard mode to the Deadly Assault card.
+- (`/gacha-log import`) Add one-click import for ZZZ HoYoLAB accounts, no URL needed.
+- (`/mimo`) Add point history view.
+- (`/accounts`) Show the status and last run time of each auto task for the selected account.
+- (`/profile zzz`) Add Sigrid card data.
+
+### Improvements
+
+- (`/search`) Split into `/search genshin` and `/search hsr` subcommands, mirroring `/profile`.
+- (`/gacha-log import`) Only fetch new records instead of the full history on every import.
+- (`/gacha-log view`) Automatically keep standard banner item lists up to date, so 50/50 win rate stats stay accurate when limited items join the standard pool.
+- (`/challenge hsr`) Show the Starward team even when the Starward stage wasn't cleared.
+- (`/challenge genshin stygian`) Restore enemy weakness and strength info.
+- (`/accompany`) Show the auto accompany toggle in the character view.
+- (`/notes`) Remove the HSR expedition column and reminder, as expeditions no longer exist in HSR.
+- Stop delivering queued auto task DM notifications after their setting has been turned off, and show the time of the action on each notification.
+- Combine up to 10 auto task notifications into a single DM and drop successful ones older than 12 hours.
+
+### Bug Fixes
+
+- (`/gacha-log view`) Fix ZZZ S-ranks pulled during their own rate-up banner being counted as 50/50 losses.
+
 ## v1.16.22
 
 ### New Features

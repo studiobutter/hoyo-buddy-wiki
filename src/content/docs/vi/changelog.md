@@ -2,6 +2,34 @@
 title: "Nhật ký thay đổi"
 ---
 
+## v1.16.23
+
+### New Features
+
+- (`/search hsr`) Thêm mục Kẻ Địch.
+- (`/challenge hsr`) Thêm Chế Độ Hướng Đến Biển Sao vào thẻ Hồi Ức Hỗn Độn, Kể Chuyện Hư Cấu, và Ảo Ảnh Tận Thế.
+- (`/challenge zzz`) Thêm Chế Độ Khó vào thẻ Tập Kích Nguy Cấp.
+- (`/gacha-log import`) Thêm một-nút nhặp Lịch Sử Chỉnh Kênh cho Tài Khoản ZZZ HoYoLAB
+- (`/mimo`) Thêm "Coi Lịch Sử Điểm".
+- (`/accounts`) Thêm trạng thái và lần chạy tự động gần nhất cho tài khoản được chọn. 
+- (`/profile zzz`) Thêm dử liệu thẻ nhân vật Sigrid.
+
+### Improvements
+
+- (`/search`) Tách thành các lệnh con `/search genshin` và `/search hsr`, tương tự như lệnh `/profile`..
+- (`/gacha-log import`) Chỉ lấy các bản ghi mới thay vì toàn bộ lịch sử trong mỗi lần nhập dữ liệu.
+- (`/gacha-log view`) Tự động cập nhật danh sách vật phẩm trong banner tiêu chuẩn để đảm bảo số liệu thống kê tỷ lệ thắng 50/50 luôn chính xác khi các vật phẩm giới hạn được đưa vào nhóm vật phẩm tiêu chuẩn.
+- (`/challenge hsr`) Hiển thị đọi Hướng Đến Biển Sao dù màn Hướng Đến Biển Sao chưa được vượt qua.
+- (`/challenge genshin stygian`) Khôi phục thông tin về điểm yếu và điểm mạnh của kẻ địch.
+- (`/accompany`) Hiển thị nút bật/tắt tự động Ghé Thăm trong giao diện nhân vật.
+- (`/notes`) Xóa cột và thông báo nhắc nhở về tính năng thám hiểm trong HSR, vì tính năng này không còn tồn tại trong trò chơi nữa.
+- Ngừng gửi thông báo tin nhắn trực tiếp (DM) cho các tác vụ tự động đã được xếp hàng sau khi cài đặt tương ứng bị tắt, đồng thời hiển thị thời gian thực hiện hành động trên mỗi thông báo.
+- Gộp tối đa 10 thông báo tác vụ tự động vào một tin nhắn trực tiếp (DM) duy nhất và loại bỏ các thông báo về tác vụ thành công đã cũ hơn 12 giờ.
+
+### Bug Fixes
+
+- (`/gacha-log view`) Khắc phục lỗi các nhân vật hạng S trong ZZZ quay được từ banner tăng tỷ lệ của chính họ lại bị tính là thua cơ chế 50/50.
+
 ## v1.16.22
 
 ### Tính năng mới
